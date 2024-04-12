@@ -322,7 +322,6 @@ if __name__ == '__main__':
         default="", help="HTTP cookie name to set in (Default: unset)")
 
     args = parser.parse_args()
-    global Listen
     Listen = (args.host, args.port)
     auth_params = {
              'realm': ('X-Ldap-Realm', args.realm),
